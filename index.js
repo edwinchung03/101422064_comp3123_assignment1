@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 app.use(express.json());
+app.use(express.urlencoded({ extended : true }))
 
 // Mongo DB connection url
 const DB_URL = 'mongodb+srv://admin:Password12345@cluster0.gkr9m.mongodb.net/comp3123_assignment1?retryWrites=true&w=majority'
